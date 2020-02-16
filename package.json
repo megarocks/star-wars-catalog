@@ -1,0 +1,36 @@
+{
+  "name": "star-wars-ing",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "karma start",
+    "test:update-snapshots": "karma start --update-snapshots",
+    "test:prune-snapshots": "karma start --prune-snapshots",
+    "start": "es-dev-server --app-index index.html --node-resolve --open --watch --file-extensions .ts --babel",
+    "lint:types": "tsc",
+    "format:prettier": "prettier \"**/*.ts\" --write --ignore-path .gitignore"
+  },
+  "author": "vitality",
+  "license": "ISC",
+  "dependencies": {
+    "@vaadin/router": "^1.6.0",
+    "lit-element": "^2.2.1",
+    "lit-html": "^1.1.2"
+  },
+  "devDependencies": {
+    "@babel/preset-typescript": "^7.8.3",
+    "@open-wc/prettier-config": "^0.1.14",
+    "@open-wc/testing": "^2.0.0",
+    "@open-wc/testing-karma": "^3.2.42",
+    "deepmerge": "^4.2.2",
+    "es-dev-server": "^1.40.0",
+    "karma": "^4.4.1",
+    "typescript": "^3.7.5"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-typescript"
+    ]
+  },
+  "prettier": "@open-wc/prettier-config"
+}
