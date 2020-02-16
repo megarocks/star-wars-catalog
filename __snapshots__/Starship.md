@@ -3,28 +3,25 @@
 #### `it renders loading message`
 
 ```html
-loading...
+<sw-loading>
+</sw-loading>
 
 ```
 
 #### `it renders error`
 
 ```html
-error.
+<sw-error>
+</sw-error>
 
 ```
 
 #### `it renders correct data`
 
 ```html
-<div>
-  <label>
-    Name:
-  </label>
-  <span>
-    Death Star
-  </span>
-</div>
+<h3>
+  Death Star
+</h3>
 <div>
   <label>
     Model:

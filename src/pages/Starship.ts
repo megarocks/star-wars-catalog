@@ -2,23 +2,28 @@ import { html } from 'lit-element';
 
 import { IStarship } from '../common/interfaces';
 import { DataLoader } from '../common/components/DataLoader';
+import { entityStyles } from '../common/styles';
 
 class Starship extends DataLoader {
+  static get styles() {
+    return [entityStyles];
+  }
+
   data: IStarship;
 
   render() {
     if (this.isLoading)
       return html`
-        loading...
+        <sw-loading />
       `;
     if (this.isError)
       return html`
-        error.
+        <sw-error />
       `;
 
     const { name, model, length, films } = this.data;
     return html`
-      <div><label>Name: </label><span>${name}</span></div>
+      <h3>${name}</h3>
       <div><label>Model: </label><span>${model}</span></div>
       <div><label>Length: </label><span>${length}</span></div>
       <div>

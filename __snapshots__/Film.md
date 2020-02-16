@@ -3,28 +3,30 @@
 #### `it renders loading message`
 
 ```html
-loading...
+<sw-loading>
+</sw-loading>
 
 ```
 
 #### `it renders error`
 
 ```html
-error.
+<sw-error>
+</sw-error>
 
 ```
 
 #### `it renders correct data`
 
 ```html
-<div>
+<div class="entity">
   <h3>
     A New Hope
     <small>
       (1977-05-25)
     </small>
   </h3>
-  <div>
+  <div class="spec">
     <label>
       Characters:
     </label>
@@ -67,7 +69,7 @@ error.
       </sw-resource-item-link>
     </div>
   </div>
-  <div>
+  <div class="spec">
     <label>
       Starships:
     </label>

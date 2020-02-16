@@ -18,11 +18,11 @@ class ResourceItemLink extends DataLoader {
   render() {
     if (this.isLoading)
       return html`
-        loading...
+        <sw-loading />
       `;
     if (this.isError)
       return html`
-        error.
+        <sw-error />
       `;
 
     const href = this.data.url.replace(API_BASE_URL, '');

@@ -7,8 +7,8 @@
     "test:update-snapshots": "karma start --update-snapshots",
     "test:prune-snapshots": "karma start --prune-snapshots",
     "start": "es-dev-server --app-index index.html --node-resolve --open --watch --file-extensions .ts --babel",
-    "lint:types": "tsc",
-    "format:prettier": "prettier \"**/*.ts\" --write --ignore-path .gitignore",
+    "code:lint": "tsc",
+    "code:format": "prettier \"**/*.ts\" --write --ignore-path .gitignore",
     "build": "rollup -c rollup.config.js",
     "build:run": "es-dev-server --root-dir dist --app-index index.html --open"
   },

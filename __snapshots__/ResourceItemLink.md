@@ -3,14 +3,16 @@
 #### `it renders loading message`
 
 ```html
-loading...
+<sw-loading>
+</sw-loading>
 
 ```
 
 #### `it renders error`
 
 ```html
-error.
+<sw-error>
+</sw-error>
 
 ```
 
