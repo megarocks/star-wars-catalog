@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <title>Vitalii Kyktov - ING Assignment</title>
+    <base href="/">
 
     <style>
         html, body {
@@ -18,9 +19,6 @@
 </head>
 <body>
 <sw-app/>
-<script type="module">
-    navigator.serviceWorker.register('/service-worker.js')
-    import "/src/StarWarsApp.ts"
-</script>
+<script type="module" src="./src/StarWarsApp.ts" />
 </body>
 </html>

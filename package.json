@@ -8,7 +8,9 @@
     "test:prune-snapshots": "karma start --prune-snapshots",
     "start": "es-dev-server --app-index index.html --node-resolve --open --watch --file-extensions .ts --babel",
     "lint:types": "tsc",
-    "format:prettier": "prettier \"**/*.ts\" --write --ignore-path .gitignore"
+    "format:prettier": "prettier \"**/*.ts\" --write --ignore-path .gitignore",
+    "build": "rollup -c rollup.config.js",
+    "build:run": "es-dev-server --root-dir dist --app-index index.html --open"
   },
   "author": "vitality",
   "license": "ISC",
@@ -19,12 +21,16 @@
   },
   "devDependencies": {
     "@babel/preset-typescript": "^7.8.3",
+    "@open-wc/building-rollup": "^0.21.0",
     "@open-wc/prettier-config": "^0.1.14",
     "@open-wc/testing": "^2.0.0",
     "@open-wc/testing-karma": "^3.2.42",
     "deepmerge": "^4.2.2",
     "es-dev-server": "^1.40.0",
     "karma": "^4.4.1",
+    "rollup": "^1.31.1",
+    "rollup-plugin-cpy": "^2.0.1",
+    "rollup-plugin-delete": "^1.2.0",
     "typescript": "^3.7.5"
   },
   "babel": {

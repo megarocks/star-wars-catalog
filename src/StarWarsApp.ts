@@ -24,10 +24,12 @@ export class StarWarsApp extends LitElement {
     ]);
   }
 
-  render = () =>
-    html`
+  render() {
+    return html`
       <div id="outlet" />
     `;
+  }
 }
 
+navigator.serviceWorker.register('/service-worker.js');
 window.customElements.define('sw-app', StarWarsApp);
