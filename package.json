@@ -27,7 +27,7 @@
     "@open-wc/testing-karma": "^3.2.42",
     "deepmerge": "^4.2.2",
     "es-dev-server": "^1.40.0",
-    "karma": "^4.4.1",
+    "karma": "^6.3.14",
     "rollup": "^1.31.1",
     "rollup-plugin-cpy": "^2.0.1",
     "rollup-plugin-delete": "^1.2.0",
